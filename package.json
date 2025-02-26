@@ -1,0 +1,21 @@
+{
+  "name": "webpack-importmap-demo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "local": "webpack serve --no-hot --mode development --no-devtool --open",
+    "build": "webpack --mode production",
+    "start": "http-server ./dist"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "@import-maps/resolve": "^2.0.0",
+    "html-webpack-plugin": "^5.6.3",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
